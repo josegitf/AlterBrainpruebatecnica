@@ -1,0 +1,29 @@
+<h2 class="text-center" mat-dialog-title>NUEVO POST</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="example-form"  [formGroup]="registrarPost" (ngSubmit)="savepost()">
+        <mat-form-field class="example-full-width">
+            <mat-label>TITULO</mat-label>
+            <input matInput placeholder="test tecnico" formControlName="title">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>CONTENIDO</mat-label>
+            <textarea matInput placeholder="hola este es mi post" formControlName="body"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Estado del post</mat-label>
+            <mat-select formControlName="estado">
+              <mat-option value="1">Privado</mat-option>
+              <mat-option value="2">Publico</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <div class="row mt-3">
+            <input type="file" placeholder="elegir imagen" formControlName="img" (change)="onFileSelected($event)">
+        </div>
+        <div class="row mt-3">
+            <button mat-raised-button color="primary" type="submit">GUARDAR</button>
+        </div>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

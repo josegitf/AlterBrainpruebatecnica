@@ -1,0 +1,29 @@
+<nav class="navbar temacolor fixed-top mb-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+    <div class="container-fluid ">
+        <a class="navbar-brand">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </a>
+        <button class="btn fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+          <i class="bi bi-list"></i> MENU
+        </button>
+    </div>
+</nav>
+
+  
+  <div class="offcanvas offcanvas-start navcolor" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center mt-3">
+            <li class="nav-item ulnav border border-2 border-dark mt-1" >
+            <a routerLink="/perfil" class="nav-link active" aria-current="page">PERFIL </a>
+            </li>
+            <li class="nav-item ulnav border border-2 border-dark mt-1">
+            <a routerLink="/posts" class="nav-link active" aria-current="page">POSTS </a>
+            </li>
+        </ul>
+    </div>
+  </div>
